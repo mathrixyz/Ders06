@@ -6,12 +6,19 @@ namespace PathCreation.Examples
     // Depending on the end of path instruction, will either loop, reverse, or stop at the end of the path.
     public class PathFollower : MonoBehaviour
     {
+        public bool isMove = false;
         public PathCreator pathCreator;
         public EndOfPathInstruction endOfPathInstruction;
         public float speed = 5;
         float distanceTravelled;
 
+        //private void OnMouseDown()
+        //{
+        //    isMove = true;
+        //}
+
         void Start() {
+            
             if (pathCreator != null)
             {
                 // Subscribed to the pathUpdated event so that we're notified if the path changes during the game
@@ -21,7 +28,17 @@ namespace PathCreation.Examples
 
         void Update()
         {
-            if (pathCreator != null)
+            if (Input.GetMouseButtonDown(0))
+            {
+                isMove = true;
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                isMove = false;
+            }
+
+            if (pathCreator != null && isMove)
             {
                 distanceTravelled += speed * Time.deltaTime;
                 transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
