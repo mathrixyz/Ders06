@@ -6,6 +6,7 @@ namespace PathCreation.Examples
     // Depending on the end of path instruction, will either loop, reverse, or stop at the end of the path.
     public class PathFollower : MonoBehaviour
     {
+        public bool isFinished= false;
         public bool isMove = false;
         public PathCreator pathCreator;
         public EndOfPathInstruction endOfPathInstruction;
@@ -38,7 +39,7 @@ namespace PathCreation.Examples
                 isMove = false;
             }
 
-            if (pathCreator != null && isMove)
+            if (pathCreator != null && isMove && !isFinished)
             {
                 distanceTravelled += speed * Time.deltaTime;
                 transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
