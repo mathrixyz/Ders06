@@ -347,8 +347,8 @@ Transform:
   m_GameObject: {fileID: 157731861}
   serializedVersion: 2
   m_LocalRotation: {x: -0.306574, y: -0.63571686, z: 0.30474427, w: -0.6395368}
-  m_LocalPosition: {x: -22.4, y: 48.9, z: 57.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -22, y: 49, z: 51}
+  m_LocalScale: {x: 0.069556035, y: 0.12371894, z: 0.15479589}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1570,8 +1570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312683c355570d44d989531b5611381a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
-  maxLevel: 1
 --- !u!4 &947264247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1872328596859306712, guid: 9a326c21925f15e41b3148b0c55dcb2b, type: 3}
@@ -1595,6 +1593,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 597926475644104348, guid: 3f83a5a9639ce0249ac0d7df9b8c40b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d32a805d5eb1194f8ecfb3f8fe04c53, type: 2}
+    - target: {fileID: 597926475644104348, guid: 3f83a5a9639ce0249ac0d7df9b8c40b9, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a40424c3ce838049b9ab70b746e1ae1, type: 2}
     - target: {fileID: 1139660981453419426, guid: 3f83a5a9639ce0249ac0d7df9b8c40b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -1965,19 +1971,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228954223}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921616687}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: RetryLevelButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1228954223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2377,7 +2371,7 @@ GameObject:
   - component: {fileID: 1649592528}
   - component: {fileID: 1649592527}
   m_Layer: 5
-  m_Name: NextLevelButton
+  m_Name: RetryLevelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2446,19 +2440,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1649592528}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921616687}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: NextLevelButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1649592528
 MonoBehaviour:
   m_ObjectHideFlags: 0

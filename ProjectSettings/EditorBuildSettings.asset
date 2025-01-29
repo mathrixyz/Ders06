@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/CarPathGame - 1.unity
+    guid: 71f6118b9ffd39544b3fe6b23b0e0ccb
+  - enabled: 1
+    path: Assets/Scenes/CarPathGame - 2.unity
+    guid: 5323bae3099b8b4409d667e2f2e4b3b5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
